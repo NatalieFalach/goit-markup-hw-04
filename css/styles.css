@@ -147,11 +147,13 @@ ul {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+  outline: none;
 }
 
 .auth-nav .contacts:hover,
 .auth-nav .contacts:focus {
   color: var(--accent-color);
+  outline: none;
 }
 
 /* main */
@@ -203,6 +205,7 @@ ul {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  outline: none;
 }
 
 .visibility-hidden {
@@ -239,9 +242,6 @@ ul {
   width: 270px;
   border-radius: 4px;
   fill: black;
-}
-.advantage-icon:hover {
-  border: 1px solid var(--accent-color);
 }
 
 .advantage-svg:hover {
@@ -284,7 +284,7 @@ ul {
 }
 
 .our-team-wrapper {
-  padding: 30px 10px;
+  padding: 30px 32px;
 
   background-color: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -309,7 +309,6 @@ ul {
 
 /* иконки */
 .our-team-social {
-  padding: 0 22px;
   margin-top: 16px;
   display: flex;
   gap: 10px;
@@ -322,11 +321,14 @@ ul {
   justify-content: center;
   fill: var(--icons-color);
 }
-.our-team-icon:hover {
+.our-team-icon:hover,
+.our-team-icon:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
   fill: var(--color-white);
+  outline: none;
 }
+
 .our-team-social-svg {
   display: inline-block;
   width: 20px;
@@ -340,8 +342,10 @@ ul {
   gap: 30px;
 }
 .clients-link {
-  display: block;
-  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
   width: 170px;
   border: 1px solid var(--icons-color);
   border-radius: 4px;
@@ -356,6 +360,7 @@ ul {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
   border-radius: 4px;
+  outline: none;
 }
 
 /* портфолио */
@@ -378,7 +383,7 @@ ul {
   color: var(--color-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  outline: none;
 }
 
 .filter button {
@@ -404,9 +409,11 @@ ul {
   text-decoration: none;
 }
 
-.gallery-link:hover {
+.gallery-link:hover,
+.gallery-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
 }
 
 .gallery-border {
@@ -459,6 +466,7 @@ ul {
 .address:hover,
 .address:focus {
   color: var(--color-white);
+  outline: none;
 }
 
 .footer-address .footer-item + .footer-item {
@@ -482,9 +490,9 @@ ul {
 .footer-join-us-social {
   margin-top: 20px;
   display: flex;
-  gap: 10px;
 }
-.footer-join-us-item {
+
+.footer-join-us-link {
   width: 44px;
   height: 44px;
   display: inline-flex;
@@ -492,14 +500,20 @@ ul {
   align-items: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--icons-color);
+  fill: var(--color-white);
+}
+
+.footer-join-us-item + .footer-join-us-item {
+  margin-left: 10px;
 }
 .footer-join-us-svg {
   width: 20px;
   height: 20px;
 }
-.footer-join-us-item:hover {
+.footer-join-us-link:hover,
+.footer-join-us-link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
   fill: var(--color-white);
+  outline: none;
 }
